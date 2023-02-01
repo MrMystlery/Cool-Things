@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Game</title>
-</head>
-<body>
-  <h1>My Game</h1>
-  <object data="Madness Accelerant_september_23rd_2009.swf" type="application/x-shockwave-flash"></object>
-</body>
-</html>
+import java.io.IOException;
+
+public class RunExeGame {
+  public static void main(String[] args) {
+    try {
+      Process process = Runtime.getRuntime().exec("cmd /c start V.S. Chara.exe");
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+}
